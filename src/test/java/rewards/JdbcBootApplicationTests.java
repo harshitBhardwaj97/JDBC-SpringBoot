@@ -16,10 +16,7 @@ public class JdbcBootApplicationTests {
 
 	@Test
 	public void testNumberOfAccount() {
-
 		long count = jdbcTemplate.queryForObject(QUERY, Long.class);
-
 		assertThat(count).isEqualTo(21L);
 	}
-
 }
